@@ -125,11 +125,6 @@ class Converter
             file = replace_all file, /(@include\s*table-row-variant\()(\w+)/, "\\1'\\2'"
           when 'thumbnails.less', 'labels.less', 'badges.less', 'buttons.less'
             file = extract_nested_rule file, 'a&'
-          when 'glyphicons.less'
-            file = replace_rules(file, /\s*@font-face/) { |rule|
-              rule = replace_all rule, /(\$icon-font(?:-\w+)+)/, '#{\1}'
-              replace_asset_url rule, :font
-            }
           when 'type.less'
             file = apply_mixin_parent_selector(file, '\.(text|bg)-(success|primary|info|warning|danger)')
             # .bg-primary will not get patched automatically as it includes an additional rule. fudge for now

@@ -1,3 +1,7 @@
+# Tienda Nube's fork of boostrap-sass
+
+This is a fork of bootstrap-sass that provides Bootstrap 3 without Glyphicons at all.
+
 # Bootstrap for Sass
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
